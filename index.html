@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+<header>
+    <a href="https://github.com/InternetProgrammingLanguages-2021">
+        Мои лабораторные
+    </a>
+</header>
+<hr/>
+<main>
+    <h1>Лабораторная работа №1</h1>
+    <h2>Основы HTML разметки</h2>
+    <div>
+        <h3>Вариант семантической разметки</h3>
+        <p>
+            С другой стороны <span class="italic">постоянный количественный рост</span> и <span class="italic">сфера нашей активности</span> играет важную
+            роль в формировании существующих финансовых и административных <span class="bold">условий</span>.<br/>
+            Дорогие друзья, сложившаяся структура <s>нашей</s> организации в значительной степени обуславливает
+            создание <span class="italic">форм воздействия.</span><br/>
+            <strong>Задача</strong> организации, в особенности же <span class="italic">выбранный нами</span> инновационный путь
+            играет <span class="attention">важную</span> роль в формировании ключевых компонентов планируемого обновления.
+        </p>
+        <p>
+            Повседневная практика показывает, что <span class="high">повышение</span> уровня гражданского сознания представляет
+            собой <span class="italic">интересный</span> эксперимент проверки системы обучения кадров, <span class="italic">соответствующей</span>
+            насущным потребностям?<br/>
+            <span class="shadowy">Дорогие друзья, начало повседневной работы по <span class="bold">формированию</span> позиции играет
+            важную роль</span> в формировании <span class="italic">экономической целесообразности</span> принимаемых решений!<br/>
+            С другой стороны выбранный нами инновационный путь играет важную роль в формировании <span class="bold">системы
+            обучения кадров</span>, соответствующей насущным <span class="italic">потребностям</span>.<br/>
+            Задача организации, <span class="bold">в особенности же</span> сложившаяся структура организации играет <s>не</s>важную
+            роль в формировании
+            направлений прогрессивного развития.
+        </p>
+        <p>
+            <span class="shadowy">Значимость этих проблем</span> настолько <span class="italic">очевидна</span>, что реализация намеченного плана развития в
+            значительной степени обуславливает создание направлений прогрессивного развития.<br/>
+            Дорогие друзья, реализация намеченного плана <span class="attention">развития</span> напрямую зависит от позиций, занимаемых <span class="bold">участниками</span>
+            в отношении поставленных задач.<br/>
+            Дорогие друзья, постоянный количественный <span class="high">рост</span> и сфера нашей активности играет важную роль в
+            формировании всесторонне сбалансированных нововведений!<br/>
+            Задача организации, в особенности же постоянное <span class="italic">информационно-техническое</span> обеспечение нашей
+            деятельности играет важную роль в формировании модели развития.
+        </p>
+        <small><cite>https://gsgen.ru/tools/fish-text/</cite></small>
+    </div>
+    <hr/>
+    <div>
+        <h3>Немного кода</h3>
+        <pre>
+            <code>
+import { configureStore } from '@reduxjs/toolkit'
+import {setupListeners} from "@reduxjs/toolkit/query";
+import resultsReducer from "./resultsSlice";
+import spendingReducer from "./spendingSlice";
+import paramReducer from "./paramSlice";
+export const store = configureStore({
+reducer: {
+results: resultsReducer,
+spending: spendingReducer,
+param: paramReducer,
+},
+})
+
+setupListeners(store.dispatch)
+            </code>
+        </pre>
+    </div>
+    <hr/>
+    <div>
+        <h3>Немного формул</h3>
+        <p>
+            <var>x</var><sup>2</sup> +
+            <var>y</var><sup>2</sup> +
+            <var>z</var><sup>2</sup> = <var>r</var><sup>2</sup><br/>
+            <var>x&#773;</var> &#183; <var>y&#773;</var> =
+            <var>x</var><sub>1</sub> &#183; <var>y</var><sub>1</sub> +
+            <var>x</var><sub>2</sub> &#183; <var>y</var><sub>2</sub> +
+            <var>x</var><sub>3</sub> &#183; <var>y</var><sub>3</sub>
+        </p>
+    </div>
+</main>
+</body>
+</html>

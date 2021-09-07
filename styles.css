@@ -1,0 +1,60 @@
+.bold {
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.high {
+    font-size: small;
+    position: relative;
+    bottom: 0.3rem;
+}
+
+.attention {
+    font-size: large;
+    font-weight: bold;
+    color: red;
+}
+
+.attention::before {
+    content: "! ";
+}
+
+.attention::after {
+    content: " !";
+}
+
+.shadowy {
+    text-shadow: 2px 2px black;
+}
+
+.table {
+    display: table;
+}
+
+.table div {
+    display: table-row;
+}
+
+.table div div {
+    display: table-cell;
+    border: 1px solid beige;
+}
+
+.table div div[colspan] {
+    border-right: 1px solid rgba(0, 0, 0, 0);
+}
+
+.table div div[colspan]+div {
+    border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+.table div[rowspan] div:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.table div[rowspan]+div div:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+}

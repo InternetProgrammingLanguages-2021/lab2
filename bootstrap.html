@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICS6 Bootstrap</title>
+    <link href="bootstrap-5.1.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./styles.css"/>
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            margin-bottom: 40px;
+            margin: 0 0 40px
+        };
+
+        main {
+            margin-top: 15px;
+        }
+
+        footer {
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .my-primary {
+            background: linear-gradient(45deg,#c763c7, #420c42) #c763c7;
+            color: rgb(221, 221, 198);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark my-primary"> <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span>
+                    </a> </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-4"> <img
+                    src="./assets/ok-cat.jpeg"
+                    alt="avatar" width="150" height="150"> </div>
+            <div class="col-8">
+                <p>Любой текст</p>
+            </div>
+        </div>
+        <div class="row flex-wrap">
+            <div class="col-12 col-lg-4">
+                <form>
+                    <table>
+                        <tr>
+                            <td><label for="username">Имя пользователя</label></td>
+                            <td><input class="form-text" type="text" name="username" id="username"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail</label></td>
+                            <td><input type="email" class="form-text" name="email" id="email"/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Пароль</label></td>
+                            <td><input type="password" class="form-text" name="password" id="password"/></td>
+                        </tr>
+                        <tr>
+                            <td><input class="btn btn-primary" type="submit" value="Регистрация"/></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-12 col-lg-4">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th scope="col" rowspan="2">№</th>
+                        <th scope="col" colspan="2">Понедельник</th>
+                        <th scope="col" colspan="2">Вторник</th>
+                        <th scope="col" colspan="2">Среда</th>
+                    </tr>
+                    <tr>
+                        <th>ЧС</th>
+                        <th>ЗН</th>
+                        <th>ЧС</th>
+                        <th>ЗН</th>
+                        <th>ЧС</th>
+                        <th>ЗН</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Правоведение</td>
+                        <td>ТВиМС</td>
+                        <td></td>
+                        <td>ЯИП</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="2">ТВиМС</td>
+                        <td></td>
+                        <td>ЯИП</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Ин. Яз.</td>
+                        <td colspan="2">ЯИП</td>
+                        <td></td>
+                        <td>Физика</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Электротехника</td>
+                        <td></td>
+                        <td colspan="2">Электротехника</td>
+                        <td></td>
+                        <td>БД</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">Физкультура</td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">БД</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">Физика</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>
+                    С другой стороны <span class="italic">постоянный количественный рост</span> и <span class="italic">сфера нашей активности</span> играет важную
+                    роль в формировании существующих финансовых и административных <span class="bold">условий</span>.<br/>
+                    Дорогие друзья, сложившаяся структура <s>нашей</s> организации в значительной степени обуславливает
+                    создание <span class="italic">форм воздействия.</span><br/>
+                    <strong>Задача</strong> организации, в особенности же <span class="italic">выбранный нами</span> инновационный путь
+                    играет <span class="attention">важную</span> роль в формировании ключевых компонентов планируемого обновления.
+                </p>
+                <p>
+                    Повседневная практика показывает, что <span class="high">повышение</span> уровня гражданского сознания представляет
+                    собой <span class="italic">интересный</span> эксперимент проверки системы обучения кадров, <span class="italic">соответствующей</span>
+                    насущным потребностям?<br/>
+                    <span class="shadowy">Дорогие друзья, начало повседневной работы по <span class="bold">формированию</span> позиции играет
+                    важную роль</span> в формировании <span class="italic">экономической целесообразности</span> принимаемых решений!<br/>
+                    С другой стороны выбранный нами инновационный путь играет важную роль в формировании <span class="bold">системы
+                    обучения кадров</span>, соответствующей насущным <span class="italic">потребностям</span>.<br/>
+                    Задача организации, <span class="bold">в особенности же</span> сложившаяся структура организации играет <s>не</s>важную
+                    роль в формировании
+                    направлений прогрессивного развития.
+                </p>
+                <p>
+                    <span class="shadowy">Значимость этих проблем</span> настолько <span class="italic">очевидна</span>, что реализация намеченного плана развития в
+                    значительной степени обуславливает создание направлений прогрессивного развития.<br/>
+                    Дорогие друзья, реализация намеченного плана <span class="attention">развития</span> напрямую зависит от позиций, занимаемых <span class="bold">участниками</span>
+                    в отношении поставленных задач.<br/>
+                    Дорогие друзья, постоянный количественный <span class="high">рост</span> и сфера нашей активности играет важную роль в
+                    формировании всесторонне сбалансированных нововведений!<br/>
+                    Задача организации, в особенности же постоянное <span class="italic">информационно-техническое</span> обеспечение нашей
+                    деятельности играет важную роль в формировании модели развития.
+                </p>
+                <small><cite>https://gsgen.ru/tools/fish-text/</cite></small>
+            
+            </div>
+        </div>
+    </main>
+    <footer class="my-primary">
+        <div class="container">
+            <p class="footer-text">Footer</p>
+        </div>
+    </footer>
+</body>
+
+</html>
